@@ -2,13 +2,8 @@
 <html>
      <head>
          <meta charset=utf-8 />
-         <!--
-         <style type="text/css">
-         body {background-image:url('../static/images/yu1.jpg');} 
-         </style>
-         -->
          <link rel='stylesheet' href="../static/styles/1.css">
-         
+         {% block yangse %}{% endblock %} 
              <title>
                  {% block title %}{% endblock %}        
              </title>
@@ -16,9 +11,9 @@
 
      <body>
          <h1>a simple blog</h1>
+         <br/><br/><br/><br/><br/>
          {% block content %}{% endblock %}
          {% block footer %}
-         <!-- 注释 -->
          <p>Thanks for visiting my site! </p>
          {% endblock %}
      </body>

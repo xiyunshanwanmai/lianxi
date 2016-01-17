@@ -11,7 +11,6 @@ class Tag(models.Model):
 class Author(models.Model):
     name = models.CharField(max_length=30)
     email = models.EmailField(blank=True)
-    website = models.URLField(blank=True)
 
     def __unicode__(self):
         return u'%s' % (self.name)

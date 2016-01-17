@@ -4,11 +4,14 @@
 
 
 {% block content %}
-<div class="content">
-     {% for blog in blogs %}
-         <h3>这是h3</h3>
-         <h2 style="color:#ffffff" >{{ blog.caption }}</h2>
-         <div>{{ blog.content}} </div> 
-     {% endfor %}     
-</div>    
+     <div class="content">
+         {% for blog in blogs %}
+             <h2 style="color:#ffffff" >{{ blog.caption }}</h2>
+             <div>{{ blog.content}} </div> 
+         {% endfor %}     
+     </div>    
+{% endblock %}
+
+{% block footer %}
+     <a href="/" style="color:#ffffff" >返回主页</a>
 {% endblock %}
