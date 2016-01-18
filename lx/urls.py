@@ -11,8 +11,8 @@ urlpatterns = patterns(
     # url(r'^$', 'lx.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^list/$', 'list'),
+    url(r'^admin/',include(admin.site.urls)),
+    url(r'^list/','list'),
     url(r'^$', 'index'),
-    url(r'^blogcontent', 'blogcontent'),
+    url(r'^blog/(?P<id>\d+)','blogarticle',name='blogarticle'),
 )

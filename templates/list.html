@@ -6,10 +6,12 @@
 {% block content %}
      <div class="content">
          {% for blog in blogs %}
-             <h2 style="color:#ffffff" >{{ blog.caption }}</h2>
+             <a href="{% url 'blogarticle' blog.id %}">{{ blog.caption }}</a>
              <div>{{ blog.content}} </div> 
+             <br/>
          {% endfor %}     
-     </div>    
+     </div>
+     <br/><br/>
 {% endblock %}
 
 {% block footer %}

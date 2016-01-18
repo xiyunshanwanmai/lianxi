@@ -6,7 +6,7 @@ from app.models import Author, Blog, Tag
 
 class AuthorAdmin(admin.ModelAdmin):
     """docstring for AuthorAdmin"""
-    list_display = ('name', 'email', 'website')
+    list_display = ('name', 'email')
     search_fields = ('name',)
 
 
